@@ -1,0 +1,24 @@
+[
+  {
+    "studentId": 0,
+    "firstName": "string",
+    "lastName": "string",
+    "grade": "string",
+    "schoolName": "string"
+  },
+  {
+    "studentId": 1,
+    "firstName": "string",
+    "lastName": "string",
+    "grade": "string",
+    "schoolName": "string"
+  },
+  {
+    "studentId": 2,
+    "firstName": "string",
+    "lastName": "string",
+    "grade": "string",
+    "schoolName": "string"
+  }
+
+]

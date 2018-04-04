@@ -1,0 +1,43 @@
+<tabs>
+  <tab tabTitle="Enrollment Details">
+    <table class="table">
+      <thead class="bg-dark">
+        <tr>
+          <th>Entry Date</th>
+          <th>Exit Date</th>
+          <th>Exit Reason</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let enrollment of enrollmentHistory'>
+          <td>{{enrollment.entryDate | date}}</td>
+          <td>{{enrollment.exitDate | date}}</td>
+          <td>{{enrollment.exitReason}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </tab>
+  <tab tabTitle="Assignment Details">
+      <table class="table">
+          <thead class="bg-dark">
+            <tr>
+              <th>Assignment Name</th>
+              <th>Due Date</th>
+              <th>Max Score</th>
+              <th>Completion Date</th>
+              <th>Score Earned</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor='let assignment of assignmentHistory'>
+              <td>{{assignment.assignmentName}}</td>
+              <td>{{assignment.dueDate | date}}</td>
+              <td>{{assignment.maxScore}}</td>
+              <td>{{assignment.completionDate  | date}}</td>
+              <td>{{assignment.scoreEarned}}</td>
+            </tr>
+          </tbody>
+        </table>
+  </tab>
+</tabs>
+<button type="button" class="btn btn-outline-secondary" (click)='goBack()'>Back</button>

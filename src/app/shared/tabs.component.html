@@ -1,0 +1,8 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <ul class="navbar-nav">
+      <li *ngFor="let tab of tabs" (click)="selectTab(tab)" [ngClass]="{'active': tab.active === true }">
+        {{ tab.tabTitle }}
+      </li>
+    </ul>
+</nav>
+<ng-content></ng-content>
