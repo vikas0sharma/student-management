@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
 
-  title = 'app';
+  title = 'StudentManagement';
   isLoggedIn: boolean;
   constructor(private _authService: AuthenticationService, private _router: Router) {
 
